@@ -1,0 +1,46 @@
+.header {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e1e20;
+  padding-left: 24px;
+  padding-right: 16px;
+  .aside {
+    display: flex;
+    .navigation {
+      display: flex;
+      align-items: center;
+      .navigation_btn {
+        width: 18px;
+        height: 18px;
+        background-color: grey;
+        margin-right: 16px;
+        &:last-child {
+          margin-right: 8px;
+        }
+      }
+    }
+    .search {
+      width: 200px;
+      height: 32px;
+      border-radius: 16px;
+      background-color: grey;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      .avatar {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: grey;
+        margin-right: 8px;
+      }
+      .name {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+}

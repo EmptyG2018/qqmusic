@@ -574,6 +574,30 @@ module.exports = function (webpackEnv) {
                 'less-loader'
               ),
             },
+            // 配置svg图标
+            {
+              test: /\.(eot|woff2?|ttf|svg)&/,
+              exclude: path.resolve(__dirname, "../src/assets/svgs"),
+              use: [
+                {
+                  loader: "url-loader",
+                  options: {
+                    name: "[name]-[hash:5].min.[ext]",
+                    limit: 5000,
+                    outputPath: "font",
+                    publicPath: "font",
+                  }
+                }
+              ]
+            },
+            {
+              test: /\.svg$/,
+              loader: "svg-sprite-loader",
+              include: path.resolve(__dirname, "../src/assets/svgs"),
+              options: {
+                symbolId: "icon-[name]"
+              }
+            },
             // "file" loader makes sure those assets get served by WebpackDevServer.
             // When you `import` an asset, you get its (virtual) filename.
             // In production, they would get copied to the `build` folder.

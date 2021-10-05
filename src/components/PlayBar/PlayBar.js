@@ -10,6 +10,25 @@ function PlayBar() {
 
   return (
     <div className={PlayBarStyle.bar}>
+      <div className={PlayBarStyle.progress_bar}></div>
+      <div className={PlayBarStyle.music_bar}>
+        <div className={PlayBarStyle.music_info}>
+          <div className={PlayBarStyle.music_thumb}></div>
+          <div className={PlayBarStyle.music_cell}>
+            <div className={PlayBarStyle.music_title}>凉凉<span className={PlayBarStyle.music_author}> - 杨宗纬 / 张碧晨</span></div>
+            <div className={PlayBarStyle.music_action}>
+            </div>
+          </div>
+        </div>
+        <div className={PlayBarStyle.music_controls}>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_sm}`}></div>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_md}`}></div>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_lg} ${PlayBarStyle.control_item_cir}`}></div>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_md}`}></div>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_sm}`}></div>
+        </div>
+        <div className={PlayBarStyle.music_fun}>wwww</div>
+      </div>
     </div>
   );
 }

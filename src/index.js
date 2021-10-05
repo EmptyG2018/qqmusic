@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.less';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./assets/svgs";
 
 ReactDOM.render(
   <React.StrictMode>
