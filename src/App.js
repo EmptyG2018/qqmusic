@@ -9,10 +9,6 @@ import Main from "./components/Main/Main";
 function App() {
   const [ welcome, setWelcome ] = useState(0);
 
-  useEffect(() => {
-    // alert();
-  })
-
   return (
     <div className={AppStyle.App}>
       <AsideMenu />

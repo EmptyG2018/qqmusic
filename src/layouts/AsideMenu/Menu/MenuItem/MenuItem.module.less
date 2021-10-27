@@ -1,0 +1,18 @@
+.menu_item {
+  list-style: none;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+  .menu_item_link {
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #a2a2a2;
+    transition: all .3s;
+    &.selected {
+      background: linear-gradient(to right, rgb(38, 206, 159), rgb(37, 197, 130) );
+      color: #fff;
+    }
+  }
+}

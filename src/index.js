@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.less';
-import App from './App';
+import RouterMap from "./router";
 import reportWebVitals from './reportWebVitals';
 import "./assets/svgs";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RouterMap />
   </React.StrictMode>,
   document.getElementById('root')
 );
