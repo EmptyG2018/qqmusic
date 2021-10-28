@@ -9,10 +9,15 @@
     flex-shrink: 0;
     overflow-y: auto;
     padding-top: 20px;
-  }
-  .group_list {
-    padding: 0;
-    margin: 12px 0;
-    font-size: 13px;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      background-color: transparent;
+    }
+    .group_list {
+      padding: 0;
+      margin: 12px 0;
+      font-size: 13px;
+    }
   }
 }

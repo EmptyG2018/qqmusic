@@ -1,11 +1,11 @@
 import SvgIconStyle from "./SvgIcon.module.less";
 
-function SvgIcon({ iconClass }) {
+function SvgIcon({ iconClass, size, color }) {
 
   const iconName = `#icon-${iconClass}`;
 
   return (
-    <svg className={SvgIconStyle.svg} aria-hidden="true">
+    <svg className={SvgIconStyle.svg} style={{ fontSize: size, color }} aria-hidden="true">
       <use xlinkHref={iconName} />
     </svg>
   )
