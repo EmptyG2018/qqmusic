@@ -14,8 +14,17 @@
       .navigation_btn {
         width: 18px;
         height: 18px;
-        background-color: grey;
         margin-right: 16px;
+        font-size: 18px;
+        line-height: 1;
+        color: #9c9c9c;
+        cursor: pointer;
+        &.back {
+          transform: rotate(180deg);
+        }
+        &:hover {
+          color: red;
+        }
         &:last-child {
           margin-right: 8px;
         }
