@@ -1,6 +1,9 @@
-import HeaderStyle from "./Header.module.less";
 import SvgIcon from "../../../components/SvgIcon";
-function Header() {
+import HeaderStyle from "./Header.module.less";
+import Search from "./Search";
+const Header = () => {
+
+  const avatar = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201712%2F15%2F20171215221023_KiYWM.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638202234&t=ffcedd82b53d17b53e6cc24ced7b7709";
 
   return (
     <div className={HeaderStyle.header}>
@@ -13,15 +16,14 @@ function Header() {
             <SvgIcon iconClass="arrow-right"></SvgIcon>
           </div>
         </div>
-        <div className={HeaderStyle.search}></div>   
+        <Search /> 
       </div>
       <div className={HeaderStyle.aside}>
         <div className={HeaderStyle.user}>
-          <div className={HeaderStyle.avatar}></div>
-          <div className={HeaderStyle.name}>QQ音乐</div>
+          <img className={HeaderStyle.avatar} src={avatar} alt={avatar} />
+          <div className={HeaderStyle.name}>会飞的小猪</div>
         </div>
       </div>
-
     </div>
   )
 }

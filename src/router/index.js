@@ -9,6 +9,7 @@ import Local from "../views/Local";
 import Download from "../views/Download";
 import Lately from "../views/Lately";
 import Cloud from "../views/Cloud";
+import Demo from "../views/Demo";
 import AppStyle from "../App.module.less";
 
 const RouterMap = () => {
@@ -38,8 +39,10 @@ const RouterMap = () => {
               <Route exact path="/lately" component={Lately} />
               {/* 微云音乐网盘 */}
               <Route exact path="/cloud" component={Cloud} />
+              {/* demo封装组件玩的 */}
+              <Route exact path="/demo" component={Demo} />
               {/* 重定向至推荐页面 */}
-              <Redirect to="/recommend" />
+              <Redirect to="/recommend" />
             </Switch>
           </View>
           <PlayBar />

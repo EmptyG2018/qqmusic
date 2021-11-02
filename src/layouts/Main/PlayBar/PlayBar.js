@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import SvgIcon from "../../../components/SvgIcon";
 import PlayBarStyle from "./PlayBar.module.less";
 
 function PlayBar() {
@@ -21,11 +22,21 @@ function PlayBar() {
           </div>
         </div>
         <div className={PlayBarStyle.music_controls}>
-          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_sm}`}></div>
-          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_md}`}></div>
-          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_lg} ${PlayBarStyle.control_item_cir}`}></div>
-          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_md}`}></div>
-          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_sm}`}></div>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_sm}`}>
+            <SvgIcon iconClass="switch" size={14} />
+          </div>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_md}`}>
+            <SvgIcon iconClass="play_before" size={16} />
+          </div>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_lg} ${PlayBarStyle.control_item_cir}`}>
+            <SvgIcon iconClass="play" size={36}  />
+          </div>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_md}`}>
+            <SvgIcon iconClass="play_after" size={16} />
+          </div>
+          <div className={`${PlayBarStyle.control_item} ${PlayBarStyle.control_item_sm}`}>
+            <SvgIcon iconClass="volume" size={14} />
+          </div>
         </div>
         <div className={PlayBarStyle.music_fun}>wwww</div>
       </div>
